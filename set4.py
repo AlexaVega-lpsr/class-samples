@@ -8,11 +8,7 @@ import turtle
  
 # Make random colors available for the functions
 
-red = random.random()
-
-green = random.random()
-
-blue = random.random()
+colors = ["Red", "Blue", "Green"]
 
 
 # -------- functions start here ----------------
@@ -47,18 +43,19 @@ def regular_pentagon(myTurtle, x, y, side):
 	sidess = 0
 	while sidess < 5:
 		myTurtle.forward(side)
- 		myTurtle.left(72)
+		myTurtle.left(72)
 		sidess = sidess + 1
+    
 def regular_hexagon(myTurtle, x, y, side):
- 	myTurtle.color(red, green, blue)
-        myTurtle.penup()
-        myTurtle.goto(x,y)
-        myTurtle.pendown()
-        sidess = 0
-        while sidess < 6:
-                myTurtle.forward(side)
-                myTurtle.right(60)
-                sidess = sidess + 1
+  myTurtle.color(red, green, blue)
+  myTurtle.penup()
+  myTurtle.goto(x,y)
+  myTurtle.pendown()
+  sidess = 0
+  while sidess < 6:
+    myTurtle.forward(side)
+    myTurtle.right(60)
+    sidess = sidess + 1
 
  
 def regular_octagon(myTurtle, x, y, side):
@@ -112,12 +109,16 @@ def circle(myTurtle, x, y, radius):
 		linesss = linesss + 3
 # -------- execution starts here ----------------
  
+#I will be printing the 2 lines below and make our own turtle called Squirt
 print("Welcome to the random shape drawer!")
 print("You choose the shapes, and we choose the position, color, and size.")
  
 squirt = turtle.Turtle()
  
+# The first line below is making shape the thing you input a string by adding those quotations. So right now shape is just a string 
 shape = ""
+
+# This makes a function that takes what you input and obeys the following, it stops once shape is equal to exit. It is also going to go through the following shapes, triangle, square, pentagon, hexagon, octogan, circle, and the one I made myself, The Triforce.
 while shape != "exit":
         print("Enter a shape - your choices are triangle, square, pentagon, hexagon, octagon, triforce, and circle.")
         print("If you're done making shapes, just type 'exit'.")
@@ -139,5 +140,5 @@ while shape != "exit":
                 regular_octagon(squirt, randx, randy, randside)
         elif shape == 'circle':
                 circle(squirt, randx, randy, randside)
-	elif shape == 'triforce':
-		regular_triforce(squirt, randx, randy, randside)
+	  elif shape == 'triforce':
+	     	    regular_triforce(squirt, randx, randy, randside)
