@@ -4,8 +4,7 @@ class Player(object):
         self.age = age
         self.goals = goals
     def printStats(self):
-        print("Name: " + self.na
-        me)
+        print("Name: " + self.name)
         print("Age: " +  self.age)
         print("Goals: " + self.goals)
     
