@@ -25,18 +25,18 @@ def printAds(carList):
  
 # note that you can pass a list and that the things you add to it will be there after calling this function 
 # this isn't true in every language!!
+
 def loadCars(carList, filename):
     # open the file
-        myFile = open(filename, 'r') 
+        myFile = open(filename, 'r')
     # read each line from the file for each one, pull apart the variables to create a Car object
+ 
         line = myFile.readline()
+        my_string = line.split()
         while line != "":
-                print("Buy this beautiful " + line)
+                my_string = line.split()
+                print("Buy This beautiful " + my_string[3] +  " " + my_string[2] + " " + my_string[0] + " " + my_string[1])
                 line = myFile.readline()
- 
- 
- 
- 
 # execution starts here!
  
 # here's an empty list that we'll fill with cars
