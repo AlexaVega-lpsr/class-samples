@@ -1,4 +1,4 @@
-print("Here is a list of all the prime numbers from 2-100,000!!! It'll take a while to rpint out ALL of them so bear $
+print("Here is a list of all the prime numbers from 2-100,000!!! It'll take a while to rpint out ALL of them so bear")
 # I will now start the main thing!
 # Takes myNum, an integer
 # Returns True if n is prime
