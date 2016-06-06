@@ -1,6 +1,6 @@
 # CS 6.5 Tools for Ciphers - Indpendent Practice
 # Implement the functions below - when you've finished, all tests should pass
-# Author: Guadalupe Aceves
+# Author: Alexa Vega
 
 
 # import statements here
