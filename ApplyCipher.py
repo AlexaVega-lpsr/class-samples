@@ -32,7 +32,7 @@ def createDictionary(key):
 def getMessage():
 	#This will ask the user for their message then decode or encode it!
 	print("Ay, what message will ya like to encode?")
-	m = input()
+	m = raw_input()
 	return m
 
 # for each letter in message, decodes and records
@@ -59,7 +59,7 @@ def printMessage(message):
 
 try:
 	print("What key would you like to use to decode?")
-	key = int(input())
+	key = int(raw_input())
 
 	dictionary = createDictionary(key)
 	encodedMessage = getMessage()
